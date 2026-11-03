@@ -1,0 +1,26 @@
+[versions]
+paper = "26.3.build.+"
+annotations = "26.1.0"
+jspecify = "1.0.0"
+auto-service = "1.1.1"
+junit = "6.0.0"
+essentials = "2.21.2"
+floodgate = "2.2.5-SNAPSHOT"
+vault = "1.7"
+
+[libraries]
+paper-api = { module = "io.papermc.paper:paper-api", version.ref = "paper" }
+essetials-api = { module = "net.essentialsx:EssentialsX", version.ref = "essentials" }
+vault-api = { module = "com.github.MilkBowl:VaultAPI", version.ref = "vault" }
+floodgate-api = { module = "org.geysermc.floodgate:api", version.ref = "floodgate"}
+annotations = { module = "org.jetbrains:annotations", version.ref = "annotations" }
+jspecify = { module = "org.jspecify:jspecify", version.ref = "jspecify" }
+auto-service-annotations = { module = "com.google.auto.service:auto-service-annotations", version.ref = "auto-service" }
+auto-service = { module = "com.google.auto.service:auto-service", version.ref = "auto-service" }
+# The BOM pins every junit coordinate, so the aggregate and the launcher stay version-less here.
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
+[plugins]
+shadow = { id = "com.gradleup.shadow", version = "9.6.1" }
